@@ -39,7 +39,11 @@ describe('Testes Login com sucesso/Falha/Cadastro de usuarios', () => {
         cy.get('#password').type('s3cret')
         cy.get('#confirmPassword').type('secret')
         cy.get('#confirmPassword-helper-text')
+<<<<<<< HEAD
         //
+=======
+        
+>>>>>>> 76bf2fa (Exercicio 1 concluido)
     });
 
 

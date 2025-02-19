@@ -118,6 +118,7 @@
       "balance": 0,
       "createdAt": "2025-02-18T23:52:33.073Z",
       "modifiedAt": "2025-02-18T23:52:33.073Z"
+<<<<<<< HEAD
     },
     {
       "id": "LArQT8d5U",
@@ -129,6 +130,8 @@
       "balance": 0,
       "createdAt": "2025-02-19T00:05:08.859Z",
       "modifiedAt": "2025-02-19T00:05:08.859Z"
+=======
+>>>>>>> 76bf2fa (Exercicio 1 concluido)
     }
   ],
   "contacts": [
