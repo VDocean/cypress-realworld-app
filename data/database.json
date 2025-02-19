@@ -74,6 +74,50 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "NFKyfTg71",
+      "uuid": "d7af30c5-eebe-4dff-9d15-a36c1c4906e1",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$HWBMwRaNy1C5ApePyvfUS.q2WXC/clW3Qxpo9vFEGjUjEbtQaqz4K",
+      "balance": 0,
+      "createdAt": "2025-02-18T23:43:19.579Z",
+      "modifiedAt": "2025-02-18T23:43:19.579Z"
+    },
+    {
+      "id": "O3fS1rBUF",
+      "uuid": "2db26700-3fd9-4dff-8f9b-e5dc3e2558fa",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$fuuywjX/30NfNl3kwrOTae4WNZ5sPyJbqDiw0F.IUMCIDu2NvsRHi",
+      "balance": 0,
+      "createdAt": "2025-02-18T23:50:25.823Z",
+      "modifiedAt": "2025-02-18T23:50:25.823Z"
+    },
+    {
+      "id": "dVRNnxebj",
+      "uuid": "921fa8f8-64ca-4827-97d5-bb485dad8acc",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$37jqFTiylWO.oBGu.nVXt.oFyH3aAvpjjTfyV40Jmz2DT6XGNBDqe",
+      "balance": 0,
+      "createdAt": "2025-02-18T23:50:37.674Z",
+      "modifiedAt": "2025-02-18T23:50:37.674Z"
+    },
+    {
+      "id": "Lu6k6N4lD",
+      "uuid": "20d22f6e-0b2b-48aa-88ba-4741334031dd",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$6c1xNNYm7Ay4AbTYQcZw9uGSz2eBoqtzJXGimCHQRsCPnzhXeVWuq",
+      "balance": 0,
+      "createdAt": "2025-02-18T23:52:33.073Z",
+      "modifiedAt": "2025-02-18T23:52:33.073Z"
     }
   ],
   "contacts": [
