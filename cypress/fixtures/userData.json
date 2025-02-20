@@ -1,0 +1,26 @@
+{
+    "loginSucess":{
+        "userName":"Heath93",
+        "password":"s3cret"
+    },
+    "loginFail":{
+        "userName":"Teste",
+        "password":"teste"
+    },
+
+    "loginFail":{
+        "userName":"Teste",
+        "password":"teste"
+    },
+    "RegisterNewUserSucess":{
+        "firstName":"Bob",
+        "lastName":"Ross",
+        "userName":"PainterJoy90",
+        "password":"s3cret"
+
+    },
+    "RegisterNewUserFail":{
+        "passwordWrong":"s3crete"
+
+    }
+}

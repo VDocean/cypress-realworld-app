@@ -1,43 +1,61 @@
+import userData from "../../fixtures/userData.json"
 
 describe('Testes Login com sucesso/Falha/Cadastro de usuarios', () => {
-    it.only('Deve fazer login com um usuário válido', () => {
-        cy.visit("http://localhost:3000/signin")
-        cy.get('#username').type("Heath93")
-        cy.get('#password').type("s3cret")
-        cy.get('[data-test="signin-submit"]').click()
+
+    const selectorList={
+        userName: '[name="username"]',
+        password: '[name="password"]',
+        buttonSubmit:'[type="submit"]',
+        registerLink:'[data-test="signup"]',
+        firstNameReg:'#firstName',
+        lastNameReg:'#lastName',
+        userReg:'#username',
+        passwordReg:"#password",
+        confirmPassReg:'#confirmPassword',
+        buttonSignUp:'[data-test="signup-submit"]'
+        
+
+    }
+    
+    it('Deve fazer login com um usuário válido', () => {
+        cy.visit("/signin")
+        cy.get(selectorList.userName).type(userData.loginSucess.userName)
+        cy.get(selectorList.password).type(userData.loginSucess.password)
+        cy.get(selectorList.buttonSubmit).click()
 
     });
 
     it('Deve exibir uma mensagem de erro ao fazer login com credenciais inválidas', () => {
-        cy.visit("http://localhost:3000/signin")
-        cy.get('#username').type("adm")
-        cy.get('#password').type("adm123")
-        cy.get('[data-test="signin-submit"]').click({force: true})
+        cy.visit("/signin")
+        cy.get(selectorList.userName).type(userData.loginFail.userName)
+        cy.get(selectorList.password).type(userData.loginFail.password)
+        cy.get(selectorList.buttonSubmit).click({force: true})
         cy.get('.MuiAlert-message')
     });
 
     it('Deve registrar um novo usuário com informações válidas', () => {
-        cy.visit("http://localhost:3000/signin")
-        cy.get('[data-test="signup"]').click()
+        cy.visit("/signin")
+        cy.get(selectorList.registerLink).click()
         cy.location('pathname').should('equal','/signup')
-        cy.get('#firstName').type('Bob')
-        cy.get('#lastName').type('Ross')
-        cy.get('#username').type('PainterJoy90')
-        cy.get('#password').type('s3cret')
-        cy.get('#confirmPassword').type('s3cret')
-        cy.get('[data-test="signup-submit"]').click()
+        cy.get(selectorList.firstNameReg).type(userData.RegisterNewUserSucess.firstName)
+        cy.get(selectorList.lastNameReg).type(userData.RegisterNewUserSucess.lastName)
+        cy.get(selectorList.userName).type(userData.RegisterNewUserSucess.userName)
+        cy.get(selectorList.passwordReg).type(userData.RegisterNewUserSucess.password)
+        cy.get(selectorList.confirmPassReg).type(userData.RegisterNewUserSucess.password)
+        cy.get(selectorList.buttonSignUp).click()
 
     });
 
     it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => { 
-        cy.visit("http://localhost:3000/signin")
-        cy.get('[data-test="signup"]').click()
+        cy.visit("/signin")
+        cy.get(selectorList.registerLink).click()
         cy.location('pathname').should('equal','/signup')
-        cy.get('#firstName').type('Bob')
-        cy.get('#lastName').type('Ross')
-        cy.get('#username').type('PainterJoy90')
-        cy.get('#password').type('s3cret')
-        cy.get('#confirmPassword').type('secret')
+        cy.location('pathname').should('equal','/signup')
+        cy.get(selectorList.firstNameReg).type(userData.RegisterNewUserSucess.firstName)
+        cy.get(selectorList.lastNameReg).type(userData.RegisterNewUserSucess.lastName)
+        cy.get(selectorList.userName).type(userData.RegisterNewUserSucess.userName)
+        cy.get(selectorList.passwordReg).type(userData.RegisterNewUserSucess.password)
+        cy.get(selectorList.confirmPassReg).type(userData.RegisterNewUserFail.passwordWrong)
         cy.get('#confirmPassword-helper-text')
         
     });
