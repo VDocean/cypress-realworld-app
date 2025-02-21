@@ -207,7 +207,21 @@
       "balance": 0,
       "createdAt": "2025-02-20T23:03:44.849Z",
       "modifiedAt": "2025-02-20T23:03:44.849Z"
+<<<<<<< HEAD
 >>>>>>> e41ec62 (Lista de seletores e page com dados de usuarios)
+=======
+    },
+    {
+      "id": "LC6OhiozV",
+      "uuid": "40c518bb-eeda-402c-b954-a753f0977a55",
+      "firstName": "Bob",
+      "lastName": "Ross",
+      "username": "PainterJoy90",
+      "password": "$2a$10$gmlfwKoXK0eGOZsopSMy0ePOzKipwWGIWhWHHl9x2ue.DRLFn77Py",
+      "balance": 0,
+      "createdAt": "2025-02-21T00:32:15.016Z",
+      "modifiedAt": "2025-02-21T00:32:15.016Z"
+>>>>>>> c018e09 (pages login e registro)
     }
   ],
   "contacts": [
