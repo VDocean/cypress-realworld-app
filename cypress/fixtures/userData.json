@@ -22,5 +22,10 @@
     "RegisterNewUserFail":{
         "passwordWrong":"s3crete"
 
+    },
+    "Transfer":{
+        "FewAmount":100,
+        "MuchAmoutn":100000,
+        "description":"For Kristian"
     }
 }
