@@ -44,6 +44,15 @@ A payment application to demonstrate <strong>real-world</strong> usage of <a hre
 > Happy Testing!
 
 ---
+## Atenção 
+
+Este repositório é um fork do repositório de mesmo nome presente na documentação do cypress.  
+Aqui fiz alguns cenários que estão dentro da pasta cypress>> teste>> ui e tem os seguintes nomes:  
+Exercise1LoginVitoria  
+Exercise2SendCashVitoria  
+Exercise3Transaction  
+Repare que os pacotes já estão instalados, portanto se for baixar este repositório para testes, pule esta etapa nos passos abaixo. 
+
 
 ## Features
 
