@@ -1,3 +1,31 @@
+## Atenção 
+
+Este repositório é um fork do repositório de mesmo nome presente na documentação do cypress.  
+Aqui fiz alguns cenários que estão dentro da **branch vitoria**.
+
+Os pacotes npm já estão instalados, portanto se for baixar este repositório para testes, pule esta etapa nos passos abaixo.
+A aplicação Real World App simula uma aplicação bancária.  
+A seguir estão os casos de testes realizados por mim.
+
+## Casos de Testes
+
+### Cenário de "Login" e "Registro de Usuário"  
+* Login com sucesso.
+* login com credenciais inválidas.  
+* Registro de novo usuário com sucesso.  
+* Registrar um novo usuário com informações incompletas.
+
+### Cenário "Enviar Dinheiro"
+
+* Enviar dinheiro com saldo suficiente.
+* sistema deve exibir uma mensagem de erro ao tentar enviar dinheiro sem saldo suficiente.
+
+### Cenário Visualizar Histórico de Transações
+
+* Visualizar histórico de transações com sucesso.
+* Tentar visualizar o histórico de transações de um usuário sem transações anteriores.  
+
+
 <p align="center">
   <!-- We use two SVGs here so that this displays correctly
     on Github. This might not look right in other Markdown previewers. -->
